@@ -1,0 +1,160 @@
+:root {
+
+    /* colors */
+    --text-dark: #000;
+    --text-light: #fff;
+    --text-gray: #adbdcc;
+
+    --purple-1: #6962f7;
+    --purple-2: #7000ff;
+    --blue-1: #00d4ff;
+
+    --primary-accent: #0a2540;
+
+    --bg-white: #fff;
+    --bg-light: #f7f9fc;
+
+    /* font family */
+    --ff-body: 'Roboto', sans-serif;
+    --ff-heading: 'Anek Telugu', sans-serif;
+
+    /* font size */
+    --fs-h1: 94px;
+    --fs-h2: 50px;
+    --fs-h3: 40px;
+    --fs-h4: 32px;
+    --fs-h5: 28px;
+    --fs-h6: 22px;
+
+    /* line height */
+    --lh-h1: 108px;
+    --lh-h2: 75px;
+
+    /* font weight */
+    --fw-light-300: 300;
+    --fw-regular-400: 400;
+    --fw-medium-500: 500;
+    --fw-semi-600: 600;
+    --fw-bold-700: 700;
+
+    /* spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: var(--ff-body);
+    color: var(--text-dark);
+    width: 100%;
+    padding: var(--spacing-sm) 0 0 0;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-semi-600);
+    font-size: var(--fs-h1);
+    width: 100%;
+    letter-spacing: -1px;
+    line-height: var(--lh-h1);
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-medium-500);
+    font-size: var(--fs-h2);
+    width: 100%;
+    letter-spacing: -0.25px;
+    line-height: var(--lh-h2);
+}
+
+h3 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-medium-500);
+    font-size: var(--fs-h3);
+    width: 100%;
+}
+
+h4 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-medium-500);
+    font-size: var(--fs-h4);
+    width: 100%;
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-medium-500);
+    font-size: var(--fs-h5);
+    width: 100%;
+}
+
+h6 {
+    font-family: var(--ff-heading);
+    font-size: var(--fw-medium-500);
+    font-size: var(--fs-h6);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple-1);
+    font-weight: var(--fw-medium-500);
+    transition: color -.25s ease;
+}
+
+a:hover {
+    color: var(--primary-accent);
+}
