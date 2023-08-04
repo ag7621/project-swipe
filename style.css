@@ -14,6 +14,8 @@
     --bg-white: #fff;
     --bg-light: #f7f9fc;
 
+    --btn-primary-hover: #6d7a88;
+
     /* font family */
     --ff-body: 'Roboto', sans-serif;
     --ff-heading: 'Anek Telugu', sans-serif;
@@ -26,9 +28,18 @@
     --fs-h5: 28px;
     --fs-h6: 22px;
 
+    --fs-subtitle: 17px;
+    --fs-paragraph: 18px;
+    --fs-secondary-text: 14px;
+    --fs-btn: 16px;
+
     /* line height */
     --lh-h1: 108px;
     --lh-h2: 75px;
+
+    --lh-subtitle: 26px;
+    --lh-paragraph: 26px;
+    --lh-secondary-text: 18px;
 
     /* font weight */
     --fw-light-300: 300;
@@ -157,4 +168,80 @@ a {
 
 a:hover {
     color: var(--primary-accent);
+}
+
+p {
+    margin: --spacing-md 0;
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-regular-400);
+    line-height: var(--lh-paragraph);
+}
+
+.subtitle,
+.subtitle--2 {
+    color: var(--purple-1);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-subtitle);
+    font-weight: var(--fw-medium-500);
+    line-height: var(--lh-subtitle);
+}
+
+.subtitle--2 {
+    color: var(--blue-1);
+}
+
+.secondary-text {
+    color: var(--text-gray);
+    font-size: var(--fs-secondary-text);
+    line-height: var(--lh-secondary-text);
+    letter-spacing: 0.25px;
+}
+
+.btn-primary {
+    background-color: var(--primary-accent);
+    color: var(--text-light);
+    border-radius: 20px;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-family: var(--ff-body);
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-bold-700);
+    letter-spacing: 1.25px;
+    transition: all 0.15s ease;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: var(--btn-primary-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-accent);
+    border-radius: 20px;
+    border: none;
+    font-family: var(--ff-body);
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-bold-700);
+    letter-spacing: 1.25px;
+    transition: all 0.15s ease;
+}
+
+.btn-secondary:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.with-icon>img {
+    transition: transform 0.25s ease;
+}
+
+.with-icon:hover>img {
+    transform: translateX(5px);
 }
