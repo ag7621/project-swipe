@@ -16,6 +16,8 @@
 
     --btn-primary-hover: #6d7a88;
 
+    --box-shadow: 0 2px 40px rgba(0, 0, 0, 0.15);
+
     /* font family */
     --ff-body: 'Roboto', sans-serif;
     --ff-heading: 'Anek Telugu', sans-serif;
@@ -391,4 +393,38 @@ main {
 
 .unified-section .btn-primary:hover {
     background-color: var(--primary-accent);
+}
+
+/* graphic section styling */
+
+.graphic-grid {
+    display: grid;
+    grid-gap: var(--spacing-lg);
+    padding: var(--spacing-xl) 0;
+    grid-template-areas:
+        "card slack slack"
+        "phone slack slack"
+        "phone dash dash";
+}
+
+
+
+#credit-card {
+    grid-area: card;
+    box-shadow: var(--box-shadow);
+}
+
+#slack-invoice {
+    grid-area: slack;
+    box-shadow: var(--box-shadow);
+}
+
+#phone {
+    grid-area: phone;
+    box-shadow: var(--box-shadow);
+}
+
+#dash {
+    grid-area: dash;
+    box-shadow: var(--box-shadow);
 }
