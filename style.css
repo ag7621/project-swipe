@@ -349,3 +349,21 @@ main {
     height: 628px;
     transform: translate(32px, -32px);
 }
+
+/* partners styling */
+
+
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: var(--spacing-md);
+    row-gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.partners-grid img {
+    height: 60px;
+    place-self: center;
+}
