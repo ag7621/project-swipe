@@ -649,3 +649,37 @@ main {
     width: 50%;
     font-weight: var(--fw-bold-700);
 }
+
+/* getting started section */
+
+.getting-started-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.getting-started-section .btn-primary {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0 0 0;
+}
+
+.getting-started-section .btn-primary:hover {
+    background-color: var(--primary-accent);
+}
+
+.getting-started-section .col-left {
+    padding: 0 var(--spacing-xl) 0 0;
+}
+
+.getting-started-section .col-right {
+    flex-direction: row;
+}
+
+.getting-started-section .col-right .card {
+    width: 50%;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.getting-started-section .col-right .card .btn-secondary {
+    color: var(--purple-2);
+    padding-left: 0;
+}
