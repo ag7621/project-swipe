@@ -223,6 +223,26 @@ p {
     padding: 0 0 0 var(--spacing-md);
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+    height: 50px;
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-medium-500);
+    font-size: var(--fs-h6);
+    width: 100%;
+}
+
 .subtitle,
 .subtitle--2 {
     color: var(--purple-1);
@@ -400,7 +420,7 @@ main {
 .graphic-grid {
     display: grid;
     grid-gap: var(--spacing-lg);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     grid-template-areas:
         "card slack slack"
         "phone slack slack"
@@ -427,4 +447,61 @@ main {
 #dash {
     grid-area: dash;
     box-shadow: var(--box-shadow);
+}
+
+/* integration section styling */
+
+.integration-section {
+    color: var(--text-light);
+}
+
+.integration-section .btn-primary {
+    background-color: var(--blue-1);
+    color: var(--primary-accent);
+    margin: var(--spacing-md) 0 0 0;
+}
+
+.integration-section .btn-primary:hover {
+    background-color: var(--bg-white);
+}
+
+.integration-section .card-container {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+}
+
+.integration-section .card-container .card {
+    width: 50%;
+}
+
+.integration-section .btn-secondary {
+    color: var(--blue-1);
+}
+
+#api-code {
+    border-radius: 20px;
+    max-width: 470px;
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+#terminal-code {
+    border-radius: 20px;
+    max-width: 470px;
+}
+
+/* why section */
+
+.why-swipe-section .card-container {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+}
+
+.why-swipe-section .card-container .card {
+    width: 25%;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.why-swipe-section .secondary-text {
+    color: var(--text-dark);
 }
